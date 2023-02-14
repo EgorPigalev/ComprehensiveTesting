@@ -31,6 +31,6 @@ namespace UnitTests
             var tar = new Start() { s = (int)expected };
             Assert.AreEqual(expected, tar.s);
         }
-        // 
+        
     }
 }
