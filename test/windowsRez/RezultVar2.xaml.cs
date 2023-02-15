@@ -356,5 +356,63 @@ namespace test
             }
             marktxt.Text = mark.ToString();
         }
+        public static int calcBonusesVarTwo(string[] otv)
+        {
+            int mark = 0;
+            if (otv[0] == "Pizza")
+            {
+                mark += 1;
+            }
+            if (otv[1] == "could read in English")
+            {
+                mark += 1;
+            }
+            if (otv[2] == "every week")
+            {
+                mark += 1;
+            }
+            if (otv[3] == "write a book")
+            {
+                mark += 1;
+            }
+            if (otv[4] == "True")
+            {
+                mark += 1;
+            }
+            if (otv[5] == "False")
+            {
+                mark += 1;
+            }
+            if (otv[6] == "True")
+            {
+                mark += 1;
+            }
+            if (otv[7] + ", " + otv[8] + ", " + otv[9] + ", " + otv[10] + ", " + otv[11] == "weather, Pizza, book, interesting, happy")
+            {
+                mark += 2;
+            }
+            if (otv[12] == "better")
+            {
+                mark += 1;
+            }
+            if (otv[13] == "-")
+            {
+                mark += 1;
+            }
+            if (otv[14] == "wrote")
+            {
+                mark += 1;
+            }
+            if (otv[15] == "was")
+            {
+                mark += 1;
+            }
+            if (otv[16] == "Does")
+            {
+                mark += 1;
+            }
+            return mark;
+        }
     }
+}
 }

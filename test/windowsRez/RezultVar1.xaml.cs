@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iTextSharp.text;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -58,7 +59,6 @@ namespace test
             z12.Text = otv[15];
             z13.Text = otv[16];
 
-            int mark = 0;
             if (fon == 0)
             {
                 if (z1.Text != z1otv.Text)
@@ -70,7 +70,6 @@ namespace test
                 {
                     Cl1 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl1"));
-                    mark += 1;
                 }
 
                 if (z2.Text != z2otv.Text)
@@ -82,7 +81,6 @@ namespace test
                 {
                     Cl2 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl2"));
-                    mark += 1;
                 }
 
                 if (z3.Text != z3otv.Text)
@@ -94,7 +92,6 @@ namespace test
                 {
                     Cl3 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl3"));
-                    mark += 1;
                 }
 
                 if (z4.Text != z4otv.Text)
@@ -106,7 +103,6 @@ namespace test
                 {
                     Cl4 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl4"));
-                    mark += 1;
                 }
 
                 if (z5.Text != z5otv.Text)
@@ -118,7 +114,6 @@ namespace test
                 {
                     Cl5 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl5"));
-                    mark += 1;
                 }
 
                 if (z6.Text != z6otv.Text)
@@ -130,7 +125,6 @@ namespace test
                 {
                     Cl6 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl6"));
-                    mark += 1;
                 }
 
                 if (z7.Text != z7otv.Text)
@@ -142,7 +136,6 @@ namespace test
                 {
                     Cl7 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl7"));
-                    mark += 1;
                 }
 
                 if (z8.Text != z8otv.Text)
@@ -154,7 +147,6 @@ namespace test
                 {
                     Cl8 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl8"));
-                    mark += 2;
                 }
 
                 if (z9.Text != z9otv.Text)
@@ -166,7 +158,6 @@ namespace test
                 {
                     Cl9 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl9"));
-                    mark += 1;
                 }
 
                 if (z10.Text != z10otv.Text)
@@ -178,7 +169,6 @@ namespace test
                 {
                     Cl10 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl10"));
-                    mark += 1;
                 }
 
                 if (z11.Text != z11otv.Text)
@@ -190,7 +180,6 @@ namespace test
                 {
                     Cl11 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl11"));
-                    mark += 1;
                 }
 
                 if (z12.Text != z12otv.Text)
@@ -202,7 +191,6 @@ namespace test
                 {
                     Cl12 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl12"));
-                    mark += 1;
                 }
 
                 if (z13.Text != z13otv.Text)
@@ -214,7 +202,6 @@ namespace test
                 {
                     Cl13 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl13"));
-                    mark += 1;
                 }
             }
             else
@@ -226,108 +213,73 @@ namespace test
                     fg = "#ffff00";
                     PropertyChanged(this, new PropertyChangedEventArgs("fg"));
                 }
-                else if(fon==2)
+                else if (fon == 2)
                 {
                     bg = "#99ccff";
                     PropertyChanged(this, new PropertyChangedEventArgs("bg"));
                     fg = "#0f6cbf";
                     PropertyChanged(this, new PropertyChangedEventArgs("fg"));
                 }
-
-
-                if (z1.Text != z1otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z2.Text != z2otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z3.Text != z3otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z4.Text != z4otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z5.Text != z5otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z6.Text != z6otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z7.Text != z7otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z8.Text != z8otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 2;
-                }
-                if (z9.Text != z9otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z10.Text != z10otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z11.Text != z11otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z12.Text != z12otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z13.Text != z13otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
             }
+            int mark = calcBonusesVarOne(otv);
             marktxt.Text = mark.ToString();
+        }
+        public static int calcBonusesVarOne(string[] otv)
+        {
+            int mark = 0;
+            if (otv[0] == "Pizza")
+            {
+                mark += 1;
+            }
+            if (otv[1] == "could read in English")
+            {
+                mark += 1;
+            }
+            if (otv[2] == "every week")
+            {
+                mark += 1;
+            }
+            if (otv[3] == "write a book")
+            {
+                mark += 1;
+            }
+            if (otv[4] == "True")
+            {
+                mark += 1;
+            }
+            if (otv[5] == "False")
+            {
+                mark += 1;
+            }
+            if (otv[6] == "True")
+            {
+                mark += 1;
+            }
+            if (otv[7] + ", " + otv[8] + ", " + otv[9] + ", " + otv[10] + ", " + otv[11] == "weather, Pizza, book, interesting, happy")
+            {
+                mark += 2;
+            }
+            if (otv[12] == "better")
+            {
+                mark += 1;
+            }
+            if (otv[13] == "-")
+            {
+                mark += 1;
+            }
+            if (otv[14] == "wrote")
+            {
+                mark += 1;
+            }
+            if (otv[15] == "was")
+            {
+                mark += 1;
+            }
+            if (otv[16] == "Does")
+            {
+                mark += 1;
+            }
+            return mark;
         }
     }
 }
