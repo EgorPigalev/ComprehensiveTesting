@@ -51,7 +51,6 @@ namespace test
             z14.Text = otv[20];
             z15.Text = otv[21];
 
-            int mark = 0;
             if (fon == 0)
             {
                 if (z1.Text != z1otv.Text)
@@ -63,7 +62,6 @@ namespace test
                 {
                     Cl1 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl1"));
-                    mark += 2;
                 }
 
                 if (z2.Text != z2otv.Text)
@@ -75,7 +73,6 @@ namespace test
                 {
                     Cl2 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl2"));
-                    mark += 1;
                 }
 
                 if (z3.Text != z3otv.Text)
@@ -87,7 +84,6 @@ namespace test
                 {
                     Cl3 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl3"));
-                    mark += 1;
                 }
 
                 if (z4.Text != z4otv.Text)
@@ -99,7 +95,6 @@ namespace test
                 {
                     Cl4 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl4"));
-                    mark += 1;
                 }
 
                 if (z5.Text != z5otv.Text)
@@ -111,7 +106,6 @@ namespace test
                 {
                     Cl5 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl5"));
-                    mark += 1;
                 }
 
                 if (z6.Text != z6otv.Text)
@@ -123,7 +117,6 @@ namespace test
                 {
                     Cl6 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl6"));
-                    mark += 1;
                 }
 
                 if (z7.Text != z7otv.Text)
@@ -135,7 +128,6 @@ namespace test
                 {
                     Cl7 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl7"));
-                    mark += 2;
                 }
 
                 if (z8.Text != z8otv.Text)
@@ -147,7 +139,6 @@ namespace test
                 {
                     Cl8 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl8"));
-                    mark += 1;
                 }
 
                 if (z9.Text != z9otv.Text)
@@ -159,7 +150,6 @@ namespace test
                 {
                     Cl9 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl9"));
-                    mark += 1;
                 }
 
                 if (z10.Text != z10otv.Text)
@@ -171,7 +161,6 @@ namespace test
                 {
                     Cl10 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl10"));
-                    mark += 1;
                 }
 
                 if (z11.Text != z11otv.Text)
@@ -183,7 +172,6 @@ namespace test
                 {
                     Cl11 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl11"));
-                    mark += 1;
                 }
 
                 if (z12.Text != z12otv.Text)
@@ -195,7 +183,6 @@ namespace test
                 {
                     Cl12 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl12"));
-                    mark += 1;
                 }
 
                 if (z13.Text != z13otv.Text)
@@ -207,7 +194,6 @@ namespace test
                 {
                     Cl13 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl13"));
-                    mark += 1;
                 }
                 if (z14.Text != z14otv.Text)
                 {
@@ -218,7 +204,6 @@ namespace test
                 {
                     Cl14 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl14"));
-                    mark += 1;
                 }
                 if (z13.Text != z13otv.Text)
                 {
@@ -229,7 +214,6 @@ namespace test
                 {
                     Cl15 = "#FFB1E664";
                     PropertyChanged(this, new PropertyChangedEventArgs("Cl15"));
-                    mark += 1;
                 }
             }
             else
@@ -248,171 +232,74 @@ namespace test
                     fg = "#0f6cbf";
                     PropertyChanged(this, new PropertyChangedEventArgs("fg"));
                 }
-                if (z1.Text != z1otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 2;
-                }
-                if (z2.Text != z2otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z3.Text != z3otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z4.Text != z4otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z5.Text != z5otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z6.Text != z6otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z7.Text != z7otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 2;
-                }
-                if (z8.Text != z8otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z9.Text != z9otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z10.Text != z10otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z11.Text != z11otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z12.Text != z12otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z13.Text != z13otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z14.Text != z14otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
-                if (z15.Text != z15otv.Text)
-                {
-                }
-                else
-                {
-                    mark += 1;
-                }
             }
+            int mark = calcBonusesVarTwo(otv);
             marktxt.Text = mark.ToString();
         }
         public static int calcBonusesVarTwo(string[] otv)
         {
             int mark = 0;
-            if (otv[0] == "Pizza")
-            {
-                mark += 1;
-            }
-            if (otv[1] == "could read in English")
-            {
-                mark += 1;
-            }
-            if (otv[2] == "every week")
-            {
-                mark += 1;
-            }
-            if (otv[3] == "write a book")
-            {
-                mark += 1;
-            }
-            if (otv[4] == "True")
-            {
-                mark += 1;
-            }
-            if (otv[5] == "False")
-            {
-                mark += 1;
-            }
-            if (otv[6] == "True")
-            {
-                mark += 1;
-            }
-            if (otv[7] + ", " + otv[8] + ", " + otv[9] + ", " + otv[10] + ", " + otv[11] == "weather, Pizza, book, interesting, happy")
+            if (otv[0] + ", " + otv[1] + ", " + otv[2] + ", " + otv[3] == "A, D, B, C")
             {
                 mark += 2;
             }
-            if (otv[12] == "better")
+            if (otv[4] == "ten")
             {
                 mark += 1;
             }
-            if (otv[13] == "-")
+            if (otv[5] == "on Sunday")
             {
                 mark += 1;
             }
-            if (otv[14] == "wrote")
+            if (otv[6] == "at 2 o'clock")
             {
                 mark += 1;
             }
-            if (otv[15] == "was")
+            if (otv[7] == "a bicycle")
             {
                 mark += 1;
             }
-            if (otv[16] == "Does")
+            if (otv[8] == "books")
+            {
+                mark += 1;
+            }
+            if (otv[9] + ", " + otv[10] + ", " + otv[11] + ", " + otv[12] + ", " + otv[13] == "Post offier, Second, Angry, Funnier, Skate")
+            {
+                mark += 2;
+            }
+            if (otv[14] == "danse")
+            {
+                mark += 1;
+            }
+            if (otv[15] == "goes")
+            {
+                mark += 1;
+            }
+            if (otv[16] == "much")
+            {
+                mark += 1;
+            }
+            if (otv[17] == "a lot of")
+            {
+                mark += 1;
+            }
+            if (otv[18] == "fifteenth")
+            {
+                mark += 1;
+            }
+            if (otv[19] == "She lives in a lake.")
+            {
+                mark += 1;
+            }
+            if (otv[20] == "But most of all she likes travelling.")
+            {
+                mark += 1;
+            }
+            if (otv[21] == "Every day she travels to another lake to visit her friends Pat and Pit.")
             {
                 mark += 1;
             }
             return mark;
         }
     }
-}
 }

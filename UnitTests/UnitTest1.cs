@@ -10,7 +10,7 @@ namespace UnitTests
     [TestClass]
     public class UnitTest1
     {
-        // Тетс, который проверяет, что подсчитанное колличество балов верное
+        // Тест, который проверяет, что подсчитанное колличество баллов верное в 1 варианте
         [TestMethod]
         public void calcBonusesVarOne_Correctly()
         {
@@ -36,7 +36,7 @@ namespace UnitTests
             int actual = RezultVar1.calcBonusesVarOne(otv);
             Assert.AreEqual(expected, actual);
         }
-        // Тетс, который проверяет, что неправильный результат не является верным
+        // Тест, который проверяет, что неправильный результат не является верным в 1 варианте
         [TestMethod]
         public void calcBonusesVarOne_DontCorrectly()
         {
@@ -60,6 +60,69 @@ namespace UnitTests
             otv[15] = "was";
             otv[16] = "Does";
             int actual = RezultVar1.calcBonusesVarOne(otv);
+            Assert.AreNotEqual(expected, actual);
+        }
+        
+        // Тест, который проверяет, что подсчитанное колличество баллов верное во 2 варианте
+        [TestMethod]
+        public void calcBonusesVarTwo_Correctly()
+        {
+            int expected = 15;
+            string[] otv = new string[22];
+            otv[0] = "A";
+            otv[1] = "D";
+            otv[2] = "B";
+            otv[3] = "C";
+            otv[4] = "ten";
+            otv[5] = "on Sunday";
+            otv[6] = "at 2 o'clock";
+            otv[7] = "a bicycle";
+            otv[8] = "books";
+            otv[9] = "Post offier";
+            otv[10] = "Second";
+            otv[11] = "Angry";
+            otv[12] = "Funnier";
+            otv[13] = "Skate";
+            otv[14] = "danse";
+            otv[15] = "goes";
+            otv[16] = "much";
+            otv[17] = "a lot of";
+            otv[18] = "fifteenth";
+            otv[19] = "She lives in a lake.";
+            otv[20] = "But most of all she likes travelling.";
+            otv[21] = "Every day she travels to another lake to visit her friends Pat and Pit.";
+            int actual = RezultVar2.calcBonusesVarTwo(otv);
+            Assert.AreEqual(expected, actual);
+        }
+        // Тест, который проверяет, что неправильный результат не является верным во 2 варианте
+        [TestMethod]
+        public void calcBonusesVarTwo_DontCorrectly()
+        {
+            int expected = 14;
+            string[] otv = new string[22];
+            otv[0] = "A";
+            otv[1] = "D";
+            otv[2] = "B";
+            otv[3] = "C";
+            otv[4] = "ten";
+            otv[5] = "on Sunday";
+            otv[6] = "at 2 o'clock";
+            otv[7] = "a bicycle";
+            otv[8] = "books";
+            otv[9] = "Post offier";
+            otv[10] = "Second";
+            otv[11] = "-";
+            otv[12] = "-";
+            otv[13] = "-";
+            otv[14] = "-";
+            otv[15] = "-";
+            otv[16] = "-";
+            otv[17] = "a lot of";
+            otv[18] = "fifteenth";
+            otv[19] = "-";
+            otv[20] = "But most of all she likes travelling.";
+            otv[21] = "Every day she travels to another lake to visit her friends Pat and Pit.";
+            int actual = RezultVar2.calcBonusesVarTwo(otv);
             Assert.AreNotEqual(expected, actual);
         }
     }
