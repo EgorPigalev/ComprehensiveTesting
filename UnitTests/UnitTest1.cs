@@ -125,5 +125,67 @@ namespace UnitTests
             int actual = RezultVar2.calcBonusesVarTwo(otv);
             Assert.AreNotEqual(expected, actual);
         }
+        // Тест, который проверяет, что подсчитанное колличество баллов верное в 3 варианте
+        [TestMethod]
+        public void calcBonusesVarThree_Correctly()
+        {
+            int expected = 15;
+            string[] otv = new string[26];
+            otv[0] = "Nina has got a brother, Nina's father's name is not Sergey, Last weekend Nina's family went to the park, Last weekend Nina's family drank tea in a cafe, Nina likes living in Moscow";
+            otv[1] = "True";
+            otv[2] = "False";
+            otv[3] = "False";
+            otv[4] = "True";
+            otv[5] = "Not stated";
+            otv[6] = "are";
+            otv[7] = "in";
+            otv[8] = "has got";
+            otv[9] = "oldest";
+            otv[10] = "west";
+            otv[11] = "short";
+            otv[12] = "cooker";
+            otv[13] = "Skate";
+            otv[14] = "danse";
+            otv[15] = "goes";
+            otv[16] = "much";
+            otv[17] = "a lot of";
+            otv[18] = "fifteenth";
+            otv[19] = "She lives in a lake.";
+            otv[20] = "But most of all she likes travelling.";
+            otv[21] = "Every day she travels to another lake to visit her friends Pat and Pit.";
+            int actual = RezultVar2.calcBonusesVarTwo(otv);
+            Assert.AreEqual(expected, actual);
+        }
+        // Тест, который проверяет, что неправильный результат не является верным в 3 варианте
+        [TestMethod]
+        public void calcBonusesVarThree_DontCorrectly()
+        {
+            int expected = 14;
+            string[] otv = new string[22];
+            otv[0] = "A";
+            otv[1] = "D";
+            otv[2] = "B";
+            otv[3] = "C";
+            otv[4] = "ten";
+            otv[5] = "on Sunday";
+            otv[6] = "at 2 o'clock";
+            otv[7] = "a bicycle";
+            otv[8] = "books";
+            otv[9] = "Post offier";
+            otv[10] = "Second";
+            otv[11] = "-";
+            otv[12] = "-";
+            otv[13] = "-";
+            otv[14] = "-";
+            otv[15] = "-";
+            otv[16] = "-";
+            otv[17] = "a lot of";
+            otv[18] = "fifteenth";
+            otv[19] = "-";
+            otv[20] = "But most of all she likes travelling.";
+            otv[21] = "Every day she travels to another lake to visit her friends Pat and Pit.";
+            int actual = RezultVar2.calcBonusesVarTwo(otv);
+            Assert.AreNotEqual(expected, actual);
+        }
     }
 }
