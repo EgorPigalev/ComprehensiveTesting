@@ -70,6 +70,7 @@ namespace test.windowsRez
             z18.Text = otv[24];
             z19.Text = otv[25];
 
+            int mark = 0;
             if (fon == 0)
             {
                 if (z1.Text != z1otv.Text)
@@ -311,90 +312,141 @@ namespace test.windowsRez
                     fg = "#0f6cbf";
                     PropertyChanged(this, new PropertyChangedEventArgs("fg"));
                 }
+                if (z1.Text != z1otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 2;
+                }
+                if (z2.Text != z2otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z3.Text != z3otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z4.Text != z4otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z5.Text != z5otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z6.Text != z6otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z7.Text != z7otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z8.Text != z8otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z9.Text != z9otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z10.Text != z10otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z11.Text != z11otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z12.Text != z12otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z13.Text != z13otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z14.Text != z14otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z15.Text != z15otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z16.Text != z16otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z17.Text != z17otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z18.Text != z18otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
+                if (z19.Text != z19otv.Text)
+                {
+                }
+                else
+                {
+                    mark += 1;
+                }
             }
-            int mark = calcBonusesVarThree(otv);
             marktxt.Text = mark.ToString();
-        }
-        public static int calcBonusesVarThree(string[] otv)
-        {
-            int mark = 0;
-            if (otv[0] + ", " + otv[1] + ", " + otv[2] + ", " + otv[3] + ", " + otv[4] + ", " + otv[5] + ", " + otv[6] + ", " + otv[7] == "Nina has got a brother, Nina's father's name is not Sergey, Last weekend Nina's family went to the park, Last weekend Nina's family drank tea in a cafe, Nina likes living in Moscow")
-            {
-                mark += 2;
-            }
-            if (otv[8] == "True")
-            {
-                mark += 1;
-            }
-            if (otv[9] == "False")
-            {
-                mark += 1;
-            }
-            if (otv[10] == "False")
-            {
-                mark += 1;
-            }
-            if (otv[11] == "True")
-            {
-                mark += 1;
-            }
-            if (otv[12] == "Not stated")
-            {
-                mark += 1;
-            }
-            if (otv[13] == "are")
-            {
-                mark += 1;
-            }
-            if (otv[14] == "in")
-            {
-                mark += 1;
-            }
-            if (otv[15] == "has got")
-            {
-                mark += 1;
-            }
-            if (otv[16] == "oldest")
-            {
-                mark += 1;
-            }
-            if (otv[17] == "west")
-            {
-                mark += 1;
-            }
-            if (otv[18] == "short")
-            {
-                mark += 1;
-            }
-            if (otv[19] == "cooker")
-            {
-                mark += 1;
-            }
-            if (otv[20] == "winter")
-            {
-                mark += 1;
-            }
-            if (otv[21] == "ant")
-            {
-                mark += 1;
-            }
-            if (otv[22] == "peats")
-            {
-                mark += 1;
-            }
-            if (otv[23] == "grapes")
-            {
-                mark += 1;
-            }
-            if (otv[24] == "tomatoes")
-            {
-                mark += 1;
-            }
-            if (otv[25] == "apple")
-            {
-                mark += 1;
-            }
-            return mark;
         }
     }
 }
