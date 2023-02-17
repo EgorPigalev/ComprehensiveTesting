@@ -152,7 +152,7 @@ namespace UnitTests
             int actual = RezultVar2.calcBonusesVarTwo(otv);
             Assert.IsFalse(expected == actual);
         }
-        // Тест, который проверяет, что подсчитанное колличество баллов верное во 2 варианте
+        // Тест, который проверяет, что метод выводит результат с корректным типом данных
         [TestMethod]
         public void calcBonusesVarTwo_CorrectlyType()
         {
